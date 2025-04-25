@@ -14,7 +14,7 @@ function SortPanel({ selectedSort, onSortChange }) {
             onChange={(e) => onSortChange(e.target.value)}
             data-testid="sort-fees"
           />
-          Fees (Ascending)
+          Price: Low-High
         </label>
         <label>
           <input
