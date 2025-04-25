@@ -1,12 +1,10 @@
 import React from 'react';
 
-// Helper to extract number from string (e.g., "10 Years..." -> 10)
 const extractNumber = (str) => {
   const match = str?.match(/\d+/);
   return match ? parseInt(match[0], 10) : 0;
 };
 
-// Helper to extract number from fee string (e.g., "₹ 500" -> 500)
 const extractFee = (str) => {
   const match = str?.match(/[\d,]+/);
   return match ? parseInt(match[0].replace(/,/g, ''), 10) : 0;

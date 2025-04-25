@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-// Assume you have a placeholder image in your public folder
 const PLACEHOLDER_IMAGE = '/placeholder.png';
 
 function AutocompleteHeader({ doctors, onSearch }) {
@@ -80,7 +79,7 @@ function AutocompleteHeader({ doctors, onSearch }) {
               onClick={() => handleSuggestionClick(doctor.name)}
               data-testid="suggestion-item"
               role="option"
-              className="suggestion-item-layout" // Existing class for layout
+              className="suggestion-item-layout"
             >
               <img
                 src={doctor.photo || PLACEHOLDER_IMAGE}
@@ -92,7 +91,6 @@ function AutocompleteHeader({ doctors, onSearch }) {
               <span className="suggestion-item-name">{doctor.name}</span>
               <span className="suggestion-item-speciality">{doctor.specialities[0].name}</span>
               </div>
-              {/* Added span for the arrow */}
               <span className="suggestion-item-arrow">{'>'}</span>
             </li>
           ))}
