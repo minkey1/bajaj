@@ -9,9 +9,9 @@
 /* Header */
 .autocomplete-header {
   position: relative;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 20px;
+  padding: 10px 50px;
+  background-color: #0080ff;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .autocomplete-header input {
@@ -334,4 +334,53 @@
 .book-appointment-btn:hover {
   background-color: #007bff;
   color: #fff;
+}
+
+.specialty-search-input {
+  width: 100%;
+  padding: 6px 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.no-specialties-found {
+  font-style: italic;
+  color: #888;
+  padding: 8px 0;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.clear-all-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.clear-all-button:hover {
+  text-decoration: underline;
+}
+
+.specialty-search-input {
+  width: 100%;
+  padding: 6px 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.no-specialties-found {
+  font-style: italic;
+  color: #888;
+  padding: 8px 0;
 }
